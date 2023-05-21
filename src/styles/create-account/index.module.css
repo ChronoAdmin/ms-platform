@@ -1,0 +1,90 @@
+
+
+.wrap {
+    height: 100vh;
+    padding: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background-image: url("/imgs/form/bg.jpg");
+    background-position: 80%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000;
+    height: 641px;
+    width: 80%;
+}
+
+.wrap h1 {
+    text-align: center;
+    height: 10%;
+    margin-bottom: 40px;
+}
+
+
+
+.form .contents {
+    z-index: 2;
+    /* background: linear-gradient(90deg, rgba(149,128,86,1) 0%, rgba(122,99,51,1) 100%); */
+    background-color: #1f1808a6;
+    padding: 1vw;
+    height: auto;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40%;
+    min-width: 350px;
+}
+
+.child {
+    background-color: rgb(255, 251, 240);
+    height: 90%;
+    padding: 1vw;
+}
+
+.name,.age,.pass {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.name input, 
+.age input, 
+.pass input {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #494949;
+    font-size: 16px;
+    color: #000;
+    padding: 5px;
+}
+
+.err {
+  margin-top: .5em;
+  color: red;
+  font-size: 14px;
+}
+
+.bbRed {
+  border-color: red !important;
+}
+
+
+
+
+
+@media screen and (max-width: 1183px) { 
+    .form img {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
